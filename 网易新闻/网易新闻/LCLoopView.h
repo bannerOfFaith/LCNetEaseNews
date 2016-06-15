@@ -9,7 +9,14 @@
 #import <UIKit/UIKit.h>
 
 @interface LCLoopView : UIView
-
+/**
+ *  计时器的间隔时间
+ */
+@property (nonatomic, assign) double timerInterval;
+/**
+ *  是否启动计时器:默认是开启状态
+ */
+@property (nonatomic, assign) BOOL enableTimer;
 /**
  *  新闻头条
  *
