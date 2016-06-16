@@ -53,15 +53,6 @@
 //        NSLog(@"%@--%@",self.URLs,self.titles);
         self.title.text = titles[0];
         self.pageCtl.numberOfPages = URLs.count;
-        // 初始化结束在设置初始位置
-        dispatch_async(dispatch_get_main_queue(), ^{
-            // 判断图片数量是否大于1
-            if (self.URLs.count > 1) {
-                [self.collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:self.URLs.count inSection:0] atScrollPosition:UICollectionViewScrollPositionNone animated:NO];
-                
-                [self startTimer];
-            }
-        });
         
     }
     return self;
@@ -78,6 +69,21 @@
         [self setup];
     }
     return self;
+}
+#pragma mark - 重写setURLs方法,不管是代码创建还是用sb或xib创建都会调用这个方法
+- (void)setURLs:(NSArray *)URLs
+{
+    _URLs = URLs;
+    // 初始化结束在设置初始位置
+    dispatch_async(dispatch_get_main_queue(), ^{
+        // 判断图片数量是否大于1
+        if (self.URLs.count > 1) {
+            [self.collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:self.URLs.count inSection:0] atScrollPosition:UICollectionViewScrollPositionNone animated:NO];
+            
+            [self startTimer];
+            [self setNeedsLayout];
+        }
+    });
 }
 #pragma mark - 初始化控件
 /**

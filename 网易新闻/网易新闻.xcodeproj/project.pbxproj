@@ -41,6 +41,9 @@
 		4BB9D38A1D1029E5005E43CA /* LCNetworkingTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BB9D3891D1029E5005E43CA /* LCNetworkingTool.m */; };
 		4BB9D38D1D102B1A005E43CA /* LCHeadLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BB9D38C1D102B1A005E43CA /* LCHeadLine.m */; };
 		4BB9D3901D103159005E43CA /* NSObject+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BB9D38F1D103159005E43CA /* NSObject+Log.m */; };
+		4BF16AF41D12BD90005EC0A3 /* LCNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BF16AF31D12BD90005EC0A3 /* LCNewsViewController.m */; };
+		4BF16AF61D12BDB4005EC0A3 /* LCNewsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BF16AF51D12BDB4005EC0A3 /* LCNewsViewController.storyboard */; };
+		4BF16AF91D12C1AF005EC0A3 /* LCNews.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BF16AF81D12C1AF005EC0A3 /* LCNews.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -112,6 +115,11 @@
 		4BB9D38C1D102B1A005E43CA /* LCHeadLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCHeadLine.m; sourceTree = "<group>"; };
 		4BB9D38E1D103159005E43CA /* NSObject+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Log.h"; sourceTree = "<group>"; };
 		4BB9D38F1D103159005E43CA /* NSObject+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Log.m"; sourceTree = "<group>"; };
+		4BF16AF21D12BD90005EC0A3 /* LCNewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCNewsViewController.h; sourceTree = "<group>"; };
+		4BF16AF31D12BD90005EC0A3 /* LCNewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCNewsViewController.m; sourceTree = "<group>"; };
+		4BF16AF51D12BDB4005EC0A3 /* LCNewsViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LCNewsViewController.storyboard; sourceTree = "<group>"; };
+		4BF16AF71D12C1AF005EC0A3 /* LCNews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCNews.h; sourceTree = "<group>"; };
+		4BF16AF81D12C1AF005EC0A3 /* LCNews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCNews.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +198,8 @@
 			children = (
 				4BB9D38B1D102B1A005E43CA /* LCHeadLine.h */,
 				4BB9D38C1D102B1A005E43CA /* LCHeadLine.m */,
+				4BF16AF71D12C1AF005EC0A3 /* LCNews.h */,
+				4BF16AF81D12C1AF005EC0A3 /* LCNews.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -214,6 +224,9 @@
 				4BB9D32B1D10226D005E43CA /* LCNewsHeadView.m */,
 				4BB9D32D1D10226D005E43CA /* Main.storyboard */,
 				4BB9D3321D10226D005E43CA /* LaunchScreen.storyboard */,
+				4BF16AF21D12BD90005EC0A3 /* LCNewsViewController.h */,
+				4BF16AF31D12BD90005EC0A3 /* LCNewsViewController.m */,
+				4BF16AF51D12BDB4005EC0A3 /* LCNewsViewController.storyboard */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -313,6 +326,7 @@
 		4BB9D3191D10226C005E43CA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = LC;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "李洋";
 				TargetAttributes = {
@@ -345,6 +359,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BB9D3341D10226D005E43CA /* LaunchScreen.storyboard in Resources */,
+				4BF16AF61D12BDB4005EC0A3 /* LCNewsViewController.storyboard in Resources */,
 				4BB9D3311D10226D005E43CA /* Assets.xcassets in Resources */,
 				4BB9D32F1D10226D005E43CA /* Main.storyboard in Resources */,
 			);
@@ -366,6 +381,7 @@
 				4BB9D3531D10277E005E43CA /* AFURLSessionManager.m in Sources */,
 				4BB9D37C1D102789005E43CA /* SDWebImageDownloaderOperation.m in Sources */,
 				4BB9D37D1D102789005E43CA /* SDWebImageManager.m in Sources */,
+				4BF16AF91D12C1AF005EC0A3 /* LCNews.m in Sources */,
 				4BB9D32C1D10226D005E43CA /* LCNewsHeadView.m in Sources */,
 				4BB9D3291D10226D005E43CA /* AppDelegate.m in Sources */,
 				4BB9D37B1D102789005E43CA /* SDWebImageDownloader.m in Sources */,
@@ -385,6 +401,7 @@
 				4BB9D3521D10277E005E43CA /* AFURLResponseSerialization.m in Sources */,
 				4BB9D34E1D10277E005E43CA /* AFHTTPSessionManager.m in Sources */,
 				4BB9D3801D102789005E43CA /* UIImage+GIF.m in Sources */,
+				4BF16AF41D12BD90005EC0A3 /* LCNewsViewController.m in Sources */,
 				4B9D16C71D11255C00B035A8 /* LCLoopCell.m in Sources */,
 				4BB9D3771D102789005E43CA /* NSData+ImageContentType.m in Sources */,
 				4BB9D3821D102789005E43CA /* UIImage+WebP.m in Sources */,
