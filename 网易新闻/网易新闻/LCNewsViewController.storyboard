@@ -68,6 +68,69 @@
                                     <outlet property="replyCount" destination="VwN-ZD-S0J" id="HhZ-GE-bba"/>
                                 </connections>
                             </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="threeImageCell" rowHeight="110" id="hot-G9-a4n" customClass="LCNewsCell">
+                                <rect key="frame" x="0.0" y="118" width="320" height="110"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hot-G9-a4n" id="48I-uF-QxG">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="109"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z3Q-cw-2jM">
+                                            <rect key="frame" x="5" y="30" width="100" height="74"/>
+                                            <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VUN-Fc-L7D">
+                                            <rect key="frame" x="110" y="30" width="100" height="74"/>
+                                            <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WLs-TX-ied">
+                                            <rect key="frame" x="10" y="5" width="210" height="20"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="210" id="ZQ5-Wb-Gtc"/>
+                                                <constraint firstAttribute="height" constant="20" id="cyw-eW-SgN"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qfk-ON-EpE">
+                                            <rect key="frame" x="277" y="7" width="38" height="18"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DdF-PI-5J9">
+                                            <rect key="frame" x="215" y="30" width="100" height="74"/>
+                                            <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="WLs-TX-ied" firstAttribute="top" secondItem="48I-uF-QxG" secondAttribute="top" constant="5" id="4Wk-k7-EO0"/>
+                                        <constraint firstItem="DdF-PI-5J9" firstAttribute="height" secondItem="z3Q-cw-2jM" secondAttribute="height" id="9cp-In-gY3"/>
+                                        <constraint firstItem="DdF-PI-5J9" firstAttribute="bottom" secondItem="z3Q-cw-2jM" secondAttribute="bottom" id="AN3-rg-6GK"/>
+                                        <constraint firstItem="VUN-Fc-L7D" firstAttribute="width" secondItem="z3Q-cw-2jM" secondAttribute="width" id="N9k-TM-FPy"/>
+                                        <constraint firstAttribute="trailing" secondItem="DdF-PI-5J9" secondAttribute="trailing" constant="5" id="NVs-sL-lhH"/>
+                                        <constraint firstItem="DdF-PI-5J9" firstAttribute="width" secondItem="z3Q-cw-2jM" secondAttribute="width" id="QDB-PO-yU9"/>
+                                        <constraint firstItem="VUN-Fc-L7D" firstAttribute="height" secondItem="z3Q-cw-2jM" secondAttribute="height" id="SYm-T7-NBK"/>
+                                        <constraint firstItem="VUN-Fc-L7D" firstAttribute="bottom" secondItem="z3Q-cw-2jM" secondAttribute="bottom" id="Vpg-EV-KC7"/>
+                                        <constraint firstItem="VUN-Fc-L7D" firstAttribute="leading" secondItem="z3Q-cw-2jM" secondAttribute="trailing" constant="5" id="Ytr-MY-qSG"/>
+                                        <constraint firstItem="Qfk-ON-EpE" firstAttribute="bottom" secondItem="WLs-TX-ied" secondAttribute="bottom" id="cxA-jU-l8I"/>
+                                        <constraint firstItem="WLs-TX-ied" firstAttribute="leading" secondItem="48I-uF-QxG" secondAttribute="leading" constant="10" id="dcK-Mk-0qK"/>
+                                        <constraint firstItem="DdF-PI-5J9" firstAttribute="leading" secondItem="VUN-Fc-L7D" secondAttribute="trailing" constant="5" id="fmI-kh-BXC"/>
+                                        <constraint firstItem="z3Q-cw-2jM" firstAttribute="leading" secondItem="48I-uF-QxG" secondAttribute="leading" constant="5" id="kcQ-mx-wav"/>
+                                        <constraint firstItem="z3Q-cw-2jM" firstAttribute="top" secondItem="WLs-TX-ied" secondAttribute="bottom" constant="5" id="oAP-gH-bYL"/>
+                                        <constraint firstAttribute="bottom" secondItem="z3Q-cw-2jM" secondAttribute="bottom" constant="5" id="spe-cR-iZd"/>
+                                        <constraint firstAttribute="trailing" secondItem="Qfk-ON-EpE" secondAttribute="trailing" constant="5" id="wIT-9E-cLe"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="iconBtn" destination="z3Q-cw-2jM" id="zPX-3P-qdY"/>
+                                    <outlet property="newsTitle" destination="WLs-TX-ied" id="Pmx-iP-rUx"/>
+                                    <outlet property="replyCount" destination="Qfk-ON-EpE" id="pyX-ic-mh7"/>
+                                    <outletCollection property="imgextra" destination="VUN-Fc-L7D" id="8xq-Tp-irb"/>
+                                    <outletCollection property="imgextra" destination="DdF-PI-5J9" id="Uj3-kJ-zPt"/>
+                                </connections>
+                            </tableViewCell>
                         </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="zyt-j1-9Rq" id="1sR-aj-APl"/>

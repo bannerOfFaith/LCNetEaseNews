@@ -26,6 +26,11 @@
  *  跟帖数
  */
 @property (nonatomic, weak) IBOutlet UILabel *replyCount;
+/**
+ *  多张图片
+ */
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *imgextra;
+
 @end
 
 @implementation LCNewsCell
@@ -35,6 +40,14 @@
  */
 - (void)setNews:(LCNews *)news {
     _news = news;
+    
+    // 判断是否有多张图片
+    if (news.imgextra) {
+        [self.imgextra enumerateObjectsUsingBlock:^(UIButton *iconBtn, NSUInteger idx, BOOL * _Nonnull stop) {
+            [iconBtn sd_setImageWithURL:[NSURL URLWithString:news.imgextra[idx]] forState:UIControlStateNormal];
+        }];
+    }
+    
     [self.iconBtn sd_setImageWithURL:[NSURL URLWithString:news.imgsrc] forState:UIControlStateNormal];
     self.newsTitle.text = news.title;
     self.detailTitle.text = news.digest;

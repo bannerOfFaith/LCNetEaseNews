@@ -14,6 +14,10 @@
  */
 @property (nonatomic, copy) NSString *imgsrc;
 /**
+ *  多张图片
+ */
+@property (nonatomic, strong) NSArray *imgextra;
+/**
  *  标题
  */
 @property (nonatomic, copy) NSString *title;

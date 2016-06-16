@@ -18,6 +18,20 @@
     
     [news setValuesForKeysWithDictionary:dict];
     
+    if (news.imgextra) {
+        // 字典转换字符串
+        NSMutableArray *imgextra = [NSMutableArray array];
+        
+        [news.imgextra enumerateObjectsUsingBlock:^(NSDictionary *obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            NSString *imgsrc = obj[@"imgsrc"];
+            [imgextra addObject:imgsrc];
+        }];
+        
+        news.imgextra = imgextra.copy;
+        
+        //    NSLog(@"%@",news.imgextra);
+    }
+    
     return news;
 }
 

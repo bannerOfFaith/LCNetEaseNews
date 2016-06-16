@@ -38,12 +38,28 @@
     return self.news.count;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    LCNewsCell *cell = [tableView dequeueReusableCellWithIdentifier:@"news" forIndexPath:indexPath];
+    LCNewsCell *cell = nil;
+    
+    LCNews *news = self.news[indexPath.row];
+    
+    if (news.imgextra) {
+        cell = [tableView dequeueReusableCellWithIdentifier:@"threeImageCell" forIndexPath:indexPath];
+    }else {
+        cell = [tableView dequeueReusableCellWithIdentifier:@"news" forIndexPath:indexPath];
+    }
     
     // 传数据给cell
-    cell.news = self.news[indexPath.row];
+    cell.news = news;
     
     return cell;
 }
-
+#pragma mark - 设置cell的高度
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    LCNews *news = self.news[indexPath.row];
+    if (news.imgextra) {
+        return 120.0;
+    }else {
+        return 90.0;
+    }
+}
 @end
