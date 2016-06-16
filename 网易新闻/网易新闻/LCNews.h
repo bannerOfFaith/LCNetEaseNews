@@ -29,7 +29,10 @@
  *  跟贴数
  */
 @property (nonatomic, copy) NSString *replyCount;
-
+/**
+ *  判断是否是大图
+ */
+@property (nonatomic, assign) BOOL imgType;
 /**
  *  快速创建模型
  */

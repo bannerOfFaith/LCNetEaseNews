@@ -45,6 +45,7 @@
 		4BF16AF61D12BDB4005EC0A3 /* LCNewsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BF16AF51D12BDB4005EC0A3 /* LCNewsViewController.storyboard */; };
 		4BF16AF91D12C1AF005EC0A3 /* LCNews.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BF16AF81D12C1AF005EC0A3 /* LCNews.m */; };
 		4BF16AFC1D12CE16005EC0A3 /* LCNewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BF16AFB1D12CE16005EC0A3 /* LCNewsCell.m */; };
+		4BF16AFE1D12E1F6005EC0A3 /* topic_news.json in Resources */ = {isa = PBXBuildFile; fileRef = 4BF16AFD1D12E1F6005EC0A3 /* topic_news.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -123,6 +124,7 @@
 		4BF16AF81D12C1AF005EC0A3 /* LCNews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCNews.m; sourceTree = "<group>"; };
 		4BF16AFA1D12CE16005EC0A3 /* LCNewsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCNewsCell.h; sourceTree = "<group>"; };
 		4BF16AFB1D12CE16005EC0A3 /* LCNewsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCNewsCell.m; sourceTree = "<group>"; };
+		4BF16AFD1D12E1F6005EC0A3 /* topic_news.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = topic_news.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +171,7 @@
 		4BB9D3241D10226D005E43CA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4BF16AFD1D12E1F6005EC0A3 /* topic_news.json */,
 				4BB9D3301D10226D005E43CA /* Assets.xcassets */,
 				4BB9D3351D10226D005E43CA /* Info.plist */,
 				4BB9D3251D10226D005E43CA /* main.m */,
@@ -366,6 +369,7 @@
 				4BB9D3341D10226D005E43CA /* LaunchScreen.storyboard in Resources */,
 				4BF16AF61D12BDB4005EC0A3 /* LCNewsViewController.storyboard in Resources */,
 				4BB9D3311D10226D005E43CA /* Assets.xcassets in Resources */,
+				4BF16AFE1D12E1F6005EC0A3 /* topic_news.json in Resources */,
 				4BB9D32F1D10226D005E43CA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

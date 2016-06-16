@@ -44,6 +44,8 @@
     
     if (news.imgextra) {
         cell = [tableView dequeueReusableCellWithIdentifier:@"threeImageCell" forIndexPath:indexPath];
+    }else if (news.imgType){
+        cell = [tableView dequeueReusableCellWithIdentifier:@"bigImageCell" forIndexPath:indexPath];
     }else {
         cell = [tableView dequeueReusableCellWithIdentifier:@"news" forIndexPath:indexPath];
     }
@@ -58,6 +60,8 @@
     LCNews *news = self.news[indexPath.row];
     if (news.imgextra) {
         return 120.0;
+    }else if (news.imgType){
+        return 200.0;
     }else {
         return 90.0;
     }

@@ -45,8 +45,8 @@
  */
 + (void)loadNetworkingSuccess:(void (^)(NSArray *news))success failed:(void (^)(NSError *error))failed {
     NSAssert(success != nil, @"完成回调一定不能为空");
-    
-    [[LCNetworkingTool sharedNetworkingTool] GET:@"article/headline/T1348647853363/0-20.html" parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, NSDictionary *responseObject) {
+    //T1422935072191  T1348647853363    T1348648517839
+    [[LCNetworkingTool sharedNetworkingTool] GET:@"article/headline/T1348648517839/0-20.html" parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, NSDictionary *responseObject) {
         // 拿到字典第一个键
         NSString *rootkey = responseObject.keyEnumerator.nextObject;
         
