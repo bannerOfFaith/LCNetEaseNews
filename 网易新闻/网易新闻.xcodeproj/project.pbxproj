@@ -44,6 +44,7 @@
 		4BF16AF41D12BD90005EC0A3 /* LCNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BF16AF31D12BD90005EC0A3 /* LCNewsViewController.m */; };
 		4BF16AF61D12BDB4005EC0A3 /* LCNewsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BF16AF51D12BDB4005EC0A3 /* LCNewsViewController.storyboard */; };
 		4BF16AF91D12C1AF005EC0A3 /* LCNews.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BF16AF81D12C1AF005EC0A3 /* LCNews.m */; };
+		4BF16AFC1D12CE16005EC0A3 /* LCNewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BF16AFB1D12CE16005EC0A3 /* LCNewsCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -120,6 +121,8 @@
 		4BF16AF51D12BDB4005EC0A3 /* LCNewsViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LCNewsViewController.storyboard; sourceTree = "<group>"; };
 		4BF16AF71D12C1AF005EC0A3 /* LCNews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCNews.h; sourceTree = "<group>"; };
 		4BF16AF81D12C1AF005EC0A3 /* LCNews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCNews.m; sourceTree = "<group>"; };
+		4BF16AFA1D12CE16005EC0A3 /* LCNewsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCNewsCell.h; sourceTree = "<group>"; };
+		4BF16AFB1D12CE16005EC0A3 /* LCNewsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCNewsCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,6 +216,8 @@
 				4B9D16C31D1123A200B035A8 /* LCLoopViewLayout.m */,
 				4B9D16C51D11255C00B035A8 /* LCLoopCell.h */,
 				4B9D16C61D11255C00B035A8 /* LCLoopCell.m */,
+				4BF16AFA1D12CE16005EC0A3 /* LCNewsCell.h */,
+				4BF16AFB1D12CE16005EC0A3 /* LCNewsCell.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -403,6 +408,7 @@
 				4BB9D3801D102789005E43CA /* UIImage+GIF.m in Sources */,
 				4BF16AF41D12BD90005EC0A3 /* LCNewsViewController.m in Sources */,
 				4B9D16C71D11255C00B035A8 /* LCLoopCell.m in Sources */,
+				4BF16AFC1D12CE16005EC0A3 /* LCNewsCell.m in Sources */,
 				4BB9D3771D102789005E43CA /* NSData+ImageContentType.m in Sources */,
 				4BB9D3821D102789005E43CA /* UIImage+WebP.m in Sources */,
 			);

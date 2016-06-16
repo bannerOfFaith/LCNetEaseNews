@@ -14,7 +14,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="W2S-Kj-1c6">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="news" id="W2S-Kj-1c6" customClass="LCNewsCell">
                                 <rect key="frame" x="0.0" y="28" width="320" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="W2S-Kj-1c6" id="Vji-VT-ujL">
@@ -61,6 +61,12 @@
                                         <constraint firstAttribute="trailing" secondItem="VwN-ZD-S0J" secondAttribute="trailing" constant="10" id="wHJ-G1-Pff"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="detailTitle" destination="grr-w8-Per" id="Tdp-q8-vw6"/>
+                                    <outlet property="iconBtn" destination="9SN-7Q-wV2" id="K59-uQ-ZPD"/>
+                                    <outlet property="newsTitle" destination="yud-E9-MLS" id="9kM-ux-mRD"/>
+                                    <outlet property="replyCount" destination="VwN-ZD-S0J" id="HhZ-GE-bba"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
