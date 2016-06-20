@@ -181,7 +181,7 @@
     // 计算当前页数
     NSInteger page = offsetX / width;
     
-    NSLog(@"%zd",page);
+//    NSLog(@"%zd",page);
     
     // 判断是否当前是否为第一页(最后一页)
     if (page == 0 || page == [self.collectionView numberOfItemsInSection:0] - 1) {

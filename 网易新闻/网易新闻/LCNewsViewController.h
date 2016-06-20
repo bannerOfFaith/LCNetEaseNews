@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface LCNewsViewController : UITableViewController
+/**
+ *  新闻数据的URL
+ */
+@property (nonatomic, copy) NSString *URLSetring;
 
 @end

@@ -34,7 +34,10 @@
     
     return news;
 }
-
+- (void)setDocid:(NSString *)docid {
+    _docid = docid;
+    _detailURLString = [NSString stringWithFormat:@"article/%@/full.html",docid];
+}
 - (void)setValue:(id)value forUndefinedKey:(NSString *)key {}
 
 /**
@@ -43,10 +46,16 @@
  *  @param success 完成回调
  *  @param failed  失败回调
  */
-+ (void)loadNetworkingSuccess:(void (^)(NSArray *news))success failed:(void (^)(NSError *error))failed {
++ (void)loadNetworkingWithURLString:(NSString *)URLString success:(void (^)(NSArray *news))success failed:(void (^)(NSError *error))failed {
     NSAssert(success != nil, @"完成回调一定不能为空");
+    
+//    NSString *GET = [NSString stringWithFormat:@"article/headline/%@/0-20.html",tid];
+    
     //T1422935072191  T1348647853363    T1348648517839
-    [[LCNetworkingTool sharedNetworkingTool] GET:@"article/headline/T1348648517839/0-20.html" parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, NSDictionary *responseObject) {
+    [[LCNetworkingTool sharedNetworkingTool] GET:URLString parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, NSDictionary *responseObject) {
+        
+//        NSLog(@"%@",responseObject);
+        
         // 拿到字典第一个键
         NSString *rootkey = responseObject.keyEnumerator.nextObject;
         

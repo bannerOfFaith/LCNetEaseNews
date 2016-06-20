@@ -7,9 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B064EC31D13C0D900757BB4 /* LCHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B064EC21D13C0D900757BB4 /* LCHomeViewController.m */; };
+		4B064EC51D13C0EF00757BB4 /* LCHomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B064EC41D13C0EF00757BB4 /* LCHomeViewController.storyboard */; };
+		4B064EC81D13C55900757BB4 /* LCTextLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B064EC71D13C55900757BB4 /* LCTextLabel.m */; };
 		4B25EF741D111ABA005DBFD1 /* LCLoopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B25EF731D111ABA005DBFD1 /* LCLoopView.m */; };
 		4B9D16C41D1123A200B035A8 /* LCLoopViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B9D16C31D1123A200B035A8 /* LCLoopViewLayout.m */; };
 		4B9D16C71D11255C00B035A8 /* LCLoopCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B9D16C61D11255C00B035A8 /* LCLoopCell.m */; };
+		4BAC70911D155FB9002D56B1 /* LCNewsViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BAC70901D155FB9002D56B1 /* LCNewsViewCell.m */; };
+		4BB37E121D16858600728798 /* LCNewsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BB37E111D16858600728798 /* LCNewsDetailViewController.m */; };
 		4BB9D3261D10226D005E43CA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BB9D3251D10226D005E43CA /* main.m */; };
 		4BB9D3291D10226D005E43CA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BB9D3281D10226D005E43CA /* AppDelegate.m */; };
 		4BB9D32C1D10226D005E43CA /* LCNewsHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BB9D32B1D10226D005E43CA /* LCNewsHeadView.m */; };
@@ -41,6 +46,7 @@
 		4BB9D38A1D1029E5005E43CA /* LCNetworkingTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BB9D3891D1029E5005E43CA /* LCNetworkingTool.m */; };
 		4BB9D38D1D102B1A005E43CA /* LCHeadLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BB9D38C1D102B1A005E43CA /* LCHeadLine.m */; };
 		4BB9D3901D103159005E43CA /* NSObject+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BB9D38F1D103159005E43CA /* NSObject+Log.m */; };
+		4BCBEDA91D13AAFB0044A382 /* LCChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BCBEDA81D13AAFB0044A382 /* LCChannel.m */; };
 		4BF16AF41D12BD90005EC0A3 /* LCNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BF16AF31D12BD90005EC0A3 /* LCNewsViewController.m */; };
 		4BF16AF61D12BDB4005EC0A3 /* LCNewsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BF16AF51D12BDB4005EC0A3 /* LCNewsViewController.storyboard */; };
 		4BF16AF91D12C1AF005EC0A3 /* LCNews.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BF16AF81D12C1AF005EC0A3 /* LCNews.m */; };
@@ -49,12 +55,21 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4B064EC11D13C0D900757BB4 /* LCHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCHomeViewController.h; sourceTree = "<group>"; };
+		4B064EC21D13C0D900757BB4 /* LCHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCHomeViewController.m; sourceTree = "<group>"; };
+		4B064EC41D13C0EF00757BB4 /* LCHomeViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LCHomeViewController.storyboard; sourceTree = "<group>"; };
+		4B064EC61D13C55900757BB4 /* LCTextLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCTextLabel.h; sourceTree = "<group>"; };
+		4B064EC71D13C55900757BB4 /* LCTextLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCTextLabel.m; sourceTree = "<group>"; };
 		4B25EF721D111ABA005DBFD1 /* LCLoopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCLoopView.h; sourceTree = "<group>"; };
 		4B25EF731D111ABA005DBFD1 /* LCLoopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCLoopView.m; sourceTree = "<group>"; };
 		4B9D16C21D1123A200B035A8 /* LCLoopViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCLoopViewLayout.h; sourceTree = "<group>"; };
 		4B9D16C31D1123A200B035A8 /* LCLoopViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCLoopViewLayout.m; sourceTree = "<group>"; };
 		4B9D16C51D11255C00B035A8 /* LCLoopCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCLoopCell.h; sourceTree = "<group>"; };
 		4B9D16C61D11255C00B035A8 /* LCLoopCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCLoopCell.m; sourceTree = "<group>"; };
+		4BAC708F1D155FB9002D56B1 /* LCNewsViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCNewsViewCell.h; sourceTree = "<group>"; };
+		4BAC70901D155FB9002D56B1 /* LCNewsViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCNewsViewCell.m; sourceTree = "<group>"; };
+		4BB37E101D16858600728798 /* LCNewsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCNewsDetailViewController.h; sourceTree = "<group>"; };
+		4BB37E111D16858600728798 /* LCNewsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCNewsDetailViewController.m; sourceTree = "<group>"; };
 		4BB9D3211D10226D005E43CA /* 网易新闻.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "网易新闻.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BB9D3251D10226D005E43CA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4BB9D3271D10226D005E43CA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -117,6 +132,8 @@
 		4BB9D38C1D102B1A005E43CA /* LCHeadLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCHeadLine.m; sourceTree = "<group>"; };
 		4BB9D38E1D103159005E43CA /* NSObject+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Log.h"; sourceTree = "<group>"; };
 		4BB9D38F1D103159005E43CA /* NSObject+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Log.m"; sourceTree = "<group>"; };
+		4BCBEDA71D13AAFB0044A382 /* LCChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCChannel.h; sourceTree = "<group>"; };
+		4BCBEDA81D13AAFB0044A382 /* LCChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCChannel.m; sourceTree = "<group>"; };
 		4BF16AF21D12BD90005EC0A3 /* LCNewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCNewsViewController.h; sourceTree = "<group>"; };
 		4BF16AF31D12BD90005EC0A3 /* LCNewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCNewsViewController.m; sourceTree = "<group>"; };
 		4BF16AF51D12BDB4005EC0A3 /* LCNewsViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LCNewsViewController.storyboard; sourceTree = "<group>"; };
@@ -206,6 +223,8 @@
 				4BB9D38C1D102B1A005E43CA /* LCHeadLine.m */,
 				4BF16AF71D12C1AF005EC0A3 /* LCNews.h */,
 				4BF16AF81D12C1AF005EC0A3 /* LCNews.m */,
+				4BCBEDA71D13AAFB0044A382 /* LCChannel.h */,
+				4BCBEDA81D13AAFB0044A382 /* LCChannel.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -221,6 +240,10 @@
 				4B9D16C61D11255C00B035A8 /* LCLoopCell.m */,
 				4BF16AFA1D12CE16005EC0A3 /* LCNewsCell.h */,
 				4BF16AFB1D12CE16005EC0A3 /* LCNewsCell.m */,
+				4B064EC61D13C55900757BB4 /* LCTextLabel.h */,
+				4B064EC71D13C55900757BB4 /* LCTextLabel.m */,
+				4BAC708F1D155FB9002D56B1 /* LCNewsViewCell.h */,
+				4BAC70901D155FB9002D56B1 /* LCNewsViewCell.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -234,7 +257,12 @@
 				4BB9D3321D10226D005E43CA /* LaunchScreen.storyboard */,
 				4BF16AF21D12BD90005EC0A3 /* LCNewsViewController.h */,
 				4BF16AF31D12BD90005EC0A3 /* LCNewsViewController.m */,
+				4BB37E101D16858600728798 /* LCNewsDetailViewController.h */,
+				4BB37E111D16858600728798 /* LCNewsDetailViewController.m */,
 				4BF16AF51D12BDB4005EC0A3 /* LCNewsViewController.storyboard */,
+				4B064EC11D13C0D900757BB4 /* LCHomeViewController.h */,
+				4B064EC21D13C0D900757BB4 /* LCHomeViewController.m */,
+				4B064EC41D13C0EF00757BB4 /* LCHomeViewController.storyboard */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -371,6 +399,7 @@
 				4BB9D3311D10226D005E43CA /* Assets.xcassets in Resources */,
 				4BF16AFE1D12E1F6005EC0A3 /* topic_news.json in Resources */,
 				4BB9D32F1D10226D005E43CA /* Main.storyboard in Resources */,
+				4B064EC51D13C0EF00757BB4 /* LCHomeViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,10 +415,14 @@
 				4BB9D3901D103159005E43CA /* NSObject+Log.m in Sources */,
 				4BB9D37A1D102789005E43CA /* SDWebImageDecoder.m in Sources */,
 				4BB9D3841D102789005E43CA /* UIImageView+WebCache.m in Sources */,
+				4B064EC31D13C0D900757BB4 /* LCHomeViewController.m in Sources */,
 				4B9D16C41D1123A200B035A8 /* LCLoopViewLayout.m in Sources */,
+				4BCBEDA91D13AAFB0044A382 /* LCChannel.m in Sources */,
+				4B064EC81D13C55900757BB4 /* LCTextLabel.m in Sources */,
 				4BB9D3531D10277E005E43CA /* AFURLSessionManager.m in Sources */,
 				4BB9D37C1D102789005E43CA /* SDWebImageDownloaderOperation.m in Sources */,
 				4BB9D37D1D102789005E43CA /* SDWebImageManager.m in Sources */,
+				4BAC70911D155FB9002D56B1 /* LCNewsViewCell.m in Sources */,
 				4BF16AF91D12C1AF005EC0A3 /* LCNews.m in Sources */,
 				4BB9D32C1D10226D005E43CA /* LCNewsHeadView.m in Sources */,
 				4BB9D3291D10226D005E43CA /* AppDelegate.m in Sources */,
@@ -412,6 +445,7 @@
 				4BB9D3801D102789005E43CA /* UIImage+GIF.m in Sources */,
 				4BF16AF41D12BD90005EC0A3 /* LCNewsViewController.m in Sources */,
 				4B9D16C71D11255C00B035A8 /* LCLoopCell.m in Sources */,
+				4BB37E121D16858600728798 /* LCNewsDetailViewController.m in Sources */,
 				4BF16AFC1D12CE16005EC0A3 /* LCNewsCell.m in Sources */,
 				4BB9D3771D102789005E43CA /* NSData+ImageContentType.m in Sources */,
 				4BB9D3821D102789005E43CA /* UIImage+WebP.m in Sources */,

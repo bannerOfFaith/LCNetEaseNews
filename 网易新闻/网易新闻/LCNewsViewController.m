@@ -9,6 +9,8 @@
 #import "LCNewsViewController.h"
 #import "LCNews.h"
 #import "LCNewsCell.h"
+#import "LCNewsHeadView.h"
+#import "LCNewsDetailViewController.h"
 @interface LCNewsViewController ()
 /**
  *  网络数据数组
@@ -17,18 +19,37 @@
 @end
 
 @implementation LCNewsViewController
+- (void)setURLSetring:(NSString *)URLSetring {
+    _URLSetring = [URLSetring copy];
+    [self loadData];
+}
 #pragma mark - viewDidLoad
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [LCNews loadNetworkingSuccess:^(NSArray *news) {
+//    [self loadData];
+}
+/**
+ *  加载数据
+ */
+- (void)loadData {
+    [LCNews loadNetworkingWithURLString:self.URLSetring success:^(NSArray *news) {
         
-        NSLog(@"%@",news);
+        //        NSLog(@"%@",news);
         
         self.news = news;
         
         [self.tableView reloadData];
         
+        UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        
+        LCNewsHeadView *vc = sb.instantiateInitialViewController;
+        
+        vc.view.frame = CGRectMake(0, 0, self.view.bounds.size.width, 200);
+        
+        self.tableView.tableHeaderView = vc.view;
+        
+        [self.tableView reloadData];
     } failed:^(NSError *error) {
         NSLog(@"%@",error);
     }];
@@ -54,6 +75,14 @@
     cell.news = news;
     
     return cell;
+}
+#pragma mark - 代理方法
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    LCNews *new = self.news[indexPath.row];
+//    NSLog(@"%@",new.detailURLString);
+    LCNewsDetailViewController *vc = [[LCNewsDetailViewController alloc]init];
+    vc.URLString = new.detailURLString;
 }
 #pragma mark - 设置cell的高度
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {

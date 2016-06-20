@@ -34,6 +34,14 @@
  */
 @property (nonatomic, assign) BOOL imgType;
 /**
+ *  加载新闻详情要使用的id
+ */
+@property (nonatomic, copy) NSString *docid;
+/**
+ *  加载详细新闻的url字符串
+ */
+@property (nonatomic, copy) NSString *detailURLString;
+/**
  *  快速创建模型
  */
 + (instancetype)newsWithDict:(NSDictionary *)dict;
@@ -44,6 +52,6 @@
  *  @param success 完成回调
  *  @param failed  失败回调
  */
-+ (void)loadNetworkingSuccess:(void (^)(NSArray *news))success failed:(void (^)(NSError *error))failed;
++ (void)loadNetworkingWithURLString:(NSString *)URLString success:(void (^)(NSArray *news))success failed:(void (^)(NSError *error))failed;
 
 @end
